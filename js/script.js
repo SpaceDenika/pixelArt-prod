@@ -3,8 +3,8 @@ let pixelItem = template.querySelector('.pixel__item');
 let containerPixel = document.querySelector('.pixel');
 let color = document.querySelector('.control__input_type_color');
 let eraser = document.querySelector('.control__input_type_eraser')
-let clearButton = document.querySelector('.control__input_type_clear');
-let fillButton = document.querySelector('.control__input_type_fill');
+let clearButton = document.querySelector('.control__button_type_clear');
+let fillButton = document.querySelector('.control__button_type_fill');
 let media_1 = window.matchMedia('(min-width: 1367px)');
 let media_2 = window.matchMedia('(max-width: 1366px)');
 let media_3 = window.matchMedia('(max-width: 1023px)');
@@ -61,22 +61,16 @@ useEraser();
 
 const clear = () => {
   for (let i = 0; i < clone.length; i++) {
-    if (clearButton.checked) {
       clone[i].style.backgroundColor = 'white';
     }
-  }
-  clearButton.checked = false;
 }
 
 clearButton.addEventListener('click', clear);
 
 const fill = () => {
   for (let i = 0; i < clone.length; i++) {
-    if (fillButton.checked) {
       clone[i].style.backgroundColor = color.value;
     }
-  }
-  fillButton.checked = false;
 }
 
 fillButton.addEventListener('click', fill);
