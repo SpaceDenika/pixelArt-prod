@@ -1,21 +1,35 @@
 let template = document.querySelector('.template').content;
 let pixelItem = template.querySelector('.pixel__item');
-let containerPixel = document.querySelector('.pixel');
+let containerPixel = document.querySelector('.pixel__board');
 let color = document.querySelector('.control__input_type_color');
 let eraser = document.querySelector('.control__input_type_eraser')
 let clearButton = document.querySelector('.control__button_type_clear');
 let fillButton = document.querySelector('.control__button_type_fill');
+let buttonSvg = document.querySelector('.pixel__button-svg');
 let media_1 = window.matchMedia('(min-width: 1367px)');
 let media_2 = window.matchMedia('(max-width: 1366px)');
 let media_3 = window.matchMedia('(max-width: 1023px)');
-let media_4 = window.matchMedia('(max-width: 767px)');
+let media_4 = window.matchMedia('(max-width: 768px)');
 let media_5 = window.matchMedia('(max-width: 639px)');
 let media_6 = window.matchMedia('(max-width: 479px)');
 let media_7 = window.matchMedia('(max-width: 424px)');
 let media_8 = window.matchMedia('(max-width: 374px)');
 let media_9 = window.matchMedia('(max-width: 319px)');
-let mainContainer = document.querySelector('.main__container');
+let mainContainer = document.querySelector('.pixel__container');
 let clone = [];
+
+const animation = () => {
+  if (buttonSvg.classList.contains('pixel__button-svg_animation_1') === true) {
+    buttonSvg.classList.remove('pixel__button-svg_animation_1');
+    buttonSvg.classList.add('pixel__button-svg_animation_2');
+  } else {
+    buttonSvg.classList.remove('pixel__button-svg_animation_2')
+    buttonSvg.classList.add('pixel__button-svg_animation_1');
+  }
+}
+
+
+buttonSvg.addEventListener('click', animation);
 
 
 const addPixel = (num) => {
@@ -145,7 +159,7 @@ const mediaQuery_6 = () => {
   if (media_6.matches) {
     removePixel();
     mainContainer.append(containerPixel);
-    addPixel(936);
+    addPixel(1260);
   } 
   paint();
   useEraser();
@@ -158,7 +172,7 @@ const mediaQuery_7 = () => {
   if (media_7.matches) {
     removePixel();
     mainContainer.append(containerPixel);
-    addPixel(416);
+    addPixel(1056);
   } 
   paint();
   useEraser();
@@ -171,7 +185,7 @@ const mediaQuery_8 = () => {
   if (media_8.matches) {
     removePixel();
     mainContainer.append(containerPixel);
-    addPixel(375);
+    addPixel(850);
   } 
   paint();
   useEraser();
@@ -184,7 +198,7 @@ const mediaQuery_9 = () => {
   if (media_9.matches) {
     removePixel();
     mainContainer.append(containerPixel);
-    addPixel(361);
+    addPixel(665);
   } 
   paint();
   useEraser();
