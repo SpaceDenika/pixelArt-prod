@@ -9,12 +9,11 @@ let buttonSvg = document.querySelector('.pixel__button-svg');
 let media_1 = window.matchMedia('(min-width: 1367px)');
 let media_2 = window.matchMedia('(max-width: 1366px)');
 let media_3 = window.matchMedia('(max-width: 1023px)');
-let media_4 = window.matchMedia('(max-width: 768px)');
+let media_4 = window.matchMedia('(max-width: 767px)');
 let media_5 = window.matchMedia('(max-width: 639px)');
-let media_6 = window.matchMedia('(max-width: 479px)');
-let media_7 = window.matchMedia('(max-width: 424px)');
-let media_8 = window.matchMedia('(max-width: 374px)');
-let media_9 = window.matchMedia('(max-width: 319px)');
+let media_6 = window.matchMedia('(max-width: 424px)');
+let media_7 = window.matchMedia('(max-width: 374px)');
+let media_8 = window.matchMedia('(max-width: 319px)');
 let mainContainer = document.querySelector('.pixel__container');
 let clone = [];
 
@@ -39,7 +38,7 @@ const addPixel = (num) => {
   }
 }
 
-// addPixel(4032);
+// addPixel(4116);
 
 const removePixel = () => {
   let items = mainContainer.querySelectorAll('.pixel__item')
@@ -93,7 +92,7 @@ const mediaQuery_1 = () => {
   if (media_1.matches) {
     removePixel();
     mainContainer.append(containerPixel);
-    addPixel(5040);
+    addPixel(5060);
   } 
   paint();
   useEraser();
@@ -106,7 +105,7 @@ const mediaQuery_2 = () => {
   if (media_2.matches) {
     removePixel();
     mainContainer.append(containerPixel);
-    addPixel(4536);
+    addPixel(4116);
   } 
   paint();
   useEraser();
@@ -119,7 +118,7 @@ const mediaQuery_3 = () => {
   if (media_3.matches) {
     removePixel();
     mainContainer.append(containerPixel);
-    addPixel(4050);
+    addPixel(3055);
   } 
   paint();
   useEraser();
@@ -133,7 +132,7 @@ const mediaQuery_4 = () => {
   if (media_4.matches) {
     removePixel();
     mainContainer.append(containerPixel);
-    addPixel(4030);
+    addPixel(2520);
   } 
   paint();
   useEraser();
@@ -146,7 +145,7 @@ const mediaQuery_5 = () => {
   if (media_5.matches) {
     removePixel();
     mainContainer.append(containerPixel);
-    addPixel(2068);
+    addPixel(1960);
   } 
   paint();
   useEraser();
@@ -159,7 +158,7 @@ const mediaQuery_6 = () => {
   if (media_6.matches) {
     removePixel();
     mainContainer.append(containerPixel);
-    addPixel(1260);
+    addPixel(1440);
   } 
   paint();
   useEraser();
@@ -172,7 +171,7 @@ const mediaQuery_7 = () => {
   if (media_7.matches) {
     removePixel();
     mainContainer.append(containerPixel);
-    addPixel(1056);
+    addPixel(1150);
   } 
   paint();
   useEraser();
@@ -185,7 +184,7 @@ const mediaQuery_8 = () => {
   if (media_8.matches) {
     removePixel();
     mainContainer.append(containerPixel);
-    addPixel(850);
+    addPixel(855);
   } 
   paint();
   useEraser();
@@ -193,16 +192,3 @@ const mediaQuery_8 = () => {
 
 mediaQuery_8();
 window.addEventListener('resize', mediaQuery_8);
-
-const mediaQuery_9 = () => {
-  if (media_9.matches) {
-    removePixel();
-    mainContainer.append(containerPixel);
-    addPixel(665);
-  } 
-  paint();
-  useEraser();
-}
-
-mediaQuery_9();
-window.addEventListener('resize', mediaQuery_9);
