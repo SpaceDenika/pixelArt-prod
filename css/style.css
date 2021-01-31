@@ -321,7 +321,7 @@
   }
 
   .pixel__image {
-    top: -12.5%;
+    top: -22.5%;
   }
 }
 
@@ -385,7 +385,6 @@
 
   .pixel__image {
     top: -19.5%;
-    left: 35%;
     width: 40px;
     height: 40px;
   }

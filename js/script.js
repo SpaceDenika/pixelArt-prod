@@ -118,7 +118,7 @@ const mediaQuery_3 = () => {
   if (media_3.matches) {
     removePixel();
     mainContainer.append(containerPixel);
-    addPixel(3055);
+    addPixel(1625);
   } 
   paint();
   useEraser();
