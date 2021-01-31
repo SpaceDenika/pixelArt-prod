@@ -177,7 +177,7 @@
   }
 }
 
-.pixel__button-svg_animation_1 {
+.pixel__image_animation_1 {
   -webkit-animation-name: shiba;
           animation-name: shiba;
   -webkit-animation-duration: 3s;
@@ -224,7 +224,7 @@
   }
 }
 
-.pixel__button-svg_animation_2 {
+.pixel__image_animation_2 {
   -webkit-animation-name: reverseShiba;
           animation-name: reverseShiba;
   -webkit-animation-duration: 3s;
@@ -237,22 +237,19 @@
           animation-delay: 2s;
 }
 
-.pixel__button-svg {
+.pixel__image {
   position: absolute;
   top: -12%;
   left: 48%;
   width: 65px;
   height: 65px;
-  background-color: transparent;
-  border: none;
-  outline: none;
   background-image: url("https://img.icons8.com/color/96/000000/hachiko.png");
   background-size: cover;
   padding: 0;
   z-index: 1;
 }
 
-.pixel__button-svg::before {
+.pixel__image::before {
   position: absolute;
   content: '';
   -webkit-transition: -webkit-transform 0.5s ease;
@@ -262,7 +259,7 @@
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
-.pixel__button-svg::after {
+.pixel__image::after {
   position: absolute;
   content: '';
   -webkit-transition: -webkit-transform 1.5s ease;
@@ -272,8 +269,8 @@
   transition: transform 1.5s ease, -webkit-transform 1.5s ease;
 }
 
-.pixel__button-svg:hover::after,
-.pixel__button-svg:focus::after {
+.pixel__image:hover::after,
+.pixel__image:focus::after {
   top: 10px;
   left: 62px;
   width: 7px;
@@ -285,8 +282,8 @@
           transform: scale(2);
 }
 
-.pixel__button-svg:hover::before,
-.pixel__button-svg:focus::before {
+.pixel__image:hover::before,
+.pixel__image:focus::before {
   content: 'Woof';
   top: -10px;
   left: 81px;
@@ -313,7 +310,7 @@
     max-width: 1106px;
   }
 
-  .pixel__button-svg {
+  .pixel__image {
     top: -12.5%;
   }
 }
@@ -323,7 +320,7 @@
     max-width: 656px;
   }
 
-  .pixel__button-svg {
+  .pixel__image {
     top: -12.5%;
   }
 }
@@ -338,7 +335,7 @@
   }
 
   .control__label:first-of-type {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 
   .control__fake-input_type_eraser {
@@ -354,7 +351,7 @@
   }
 
   .control__button:first-of-type {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 
   .control {
@@ -368,7 +365,7 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    max-height: 65px;
+    max-height: 70px;
     font-size: 20px;
   }
 
@@ -376,8 +373,34 @@
     max-width: 456px;
   }
 
-  .pixel__button-svg {
-    top: -10.5%;
+  .pixel__image {
+    top: -6.5%;
+    left: 35%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .pixel__image:hover::after,
+  .pixel__image:focus::after {
+    width: 3px;
+    height: 3px;
+    top: 6px;
+    left: 39px;
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+
+  .pixel__image:hover::before,
+  .pixel__image:focus::before {
+    width: 20px;
+    height: 10px;
+    font-size: 5px;
+    top: -3px;
+    left: 45px;
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 
@@ -393,7 +416,7 @@
   }
 
   .control__label:first-of-type {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
   }
 
   .control__fake-input_type_eraser {
@@ -407,7 +430,7 @@
   }
 
   .control__button:first-of-type {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
   }
 
   .control {
@@ -418,8 +441,8 @@
     max-width: 326px;
   }
 
-  .pixel__button-svg {
-    top: -13%;
+  .pixel__image {
+    top: -8%;
   }
 }
 
@@ -428,8 +451,8 @@
     max-width: 256px;
   }
 
-  .pixel__button-svg {
-    top: -15%;
+  .pixel__image {
+    top: -9%;
   }
 }
 
@@ -438,7 +461,7 @@
     max-width: 196px;
   }
 
-  .pixel__button-svg {
-    top: -13%;
+  .pixel__image {
+    top: -8%;
   }
 }

@@ -5,7 +5,7 @@ let color = document.querySelector('.control__input_type_color');
 let eraser = document.querySelector('.control__input_type_eraser')
 let clearButton = document.querySelector('.control__button_type_clear');
 let fillButton = document.querySelector('.control__button_type_fill');
-let buttonSvg = document.querySelector('.pixel__button-svg');
+let pixelImage = document.querySelector('.pixel__image');
 let media_1 = window.matchMedia('(min-width: 1367px)');
 let media_2 = window.matchMedia('(max-width: 1366px)');
 let media_3 = window.matchMedia('(max-width: 1023px)');
@@ -18,17 +18,17 @@ let mainContainer = document.querySelector('.pixel__container');
 let clone = [];
 
 const animation = () => {
-  if (buttonSvg.classList.contains('pixel__button-svg_animation_1') !== true) {
-    buttonSvg.classList.remove('pixel__button-svg_animation_2');
-    buttonSvg.classList.add('pixel__button-svg_animation_1');
+  if (pixelImage.classList.contains('pixel__image_animation_1') !== true) {
+    pixelImage.classList.remove('pixel__image_animation_2');
+    pixelImage.classList.add('pixel__image_animation_1');
   } else {
-    buttonSvg.classList.remove('pixel__button-svg_animation_1');
-    buttonSvg.classList.add('pixel__button-svg_animation_2');
+    pixelImage.classList.remove('pixel__image_animation_1');
+    pixelImage.classList.add('pixel__image_animation_2');
   }
 }
 
 
-buttonSvg.addEventListener('click', animation);
+pixelImage.addEventListener('click', animation);
 
 
 const addPixel = (num) => {
