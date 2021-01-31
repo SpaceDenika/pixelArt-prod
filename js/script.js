@@ -17,18 +17,18 @@ let media_8 = window.matchMedia('(max-width: 319px)');
 let mainContainer = document.querySelector('.pixel__container');
 let clone = [];
 
-const animation = () => {
-  if (pixelImage.classList.contains('pixel__image_animation_1') !== true) {
-    pixelImage.classList.remove('pixel__image_animation_2');
-    pixelImage.classList.add('pixel__image_animation_1');
-  } else {
-    pixelImage.classList.remove('pixel__image_animation_1');
-    pixelImage.classList.add('pixel__image_animation_2');
-  }
-}
+// const animation = () => {
+//   if (pixelImage.classList.contains('pixel__image_animation_1') !== true) {
+//     pixelImage.classList.remove('pixel__image_animation_2');
+//     pixelImage.classList.add('pixel__image_animation_1');
+//   } else {
+//     pixelImage.classList.remove('pixel__image_animation_1');
+//     pixelImage.classList.add('pixel__image_animation_2');
+//   }
+// }
 
 
-pixelImage.addEventListener('click', animation);
+// pixelImage.addEventListener('click', animation);
 
 
 const addPixel = (num) => {
