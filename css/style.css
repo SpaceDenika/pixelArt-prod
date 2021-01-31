@@ -18,7 +18,7 @@
 .header {
   background-color: #ff9f92;
   border-bottom: 2px solid black;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .control__input_type_eraser:checked + .control__fake-input {
