@@ -18,12 +18,12 @@ let mainContainer = document.querySelector('.pixel__container');
 let clone = [];
 
 const animation = () => {
-  if (buttonSvg.classList.contains('pixel__button-svg_animation_1') === true) {
+  if (buttonSvg.classList.contains('pixel__button-svg_animation_1') !== true) {
+    buttonSvg.classList.remove('pixel__button-svg_animation_2');
+    buttonSvg.classList.add('pixel__button-svg_animation_1');
+  } else {
     buttonSvg.classList.remove('pixel__button-svg_animation_1');
     buttonSvg.classList.add('pixel__button-svg_animation_2');
-  } else {
-    buttonSvg.classList.remove('pixel__button-svg_animation_2')
-    buttonSvg.classList.add('pixel__button-svg_animation_1');
   }
 }
 
@@ -171,7 +171,7 @@ const mediaQuery_7 = () => {
   if (media_7.matches) {
     removePixel();
     mainContainer.append(containerPixel);
-    addPixel(1150);
+    addPixel(975);
   } 
   paint();
   useEraser();
