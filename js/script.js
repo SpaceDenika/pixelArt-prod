@@ -17,18 +17,18 @@ let media_8 = window.matchMedia('(max-width: 319px)');
 let mainContainer = document.querySelector('.pixel__container');
 let clone = [];
 
-// const animation = () => {
-//   if (pixelImage.classList.contains('pixel__image_animation_1') !== true) {
-//     pixelImage.classList.remove('pixel__image_animation_2');
-//     pixelImage.classList.add('pixel__image_animation_1');
-//   } else {
-//     pixelImage.classList.remove('pixel__image_animation_1');
-//     pixelImage.classList.add('pixel__image_animation_2');
-//   }
-// }
+const animation = () => {
+  if (pixelImage.classList.contains('pixel__image_animation_1') !== true) {
+    pixelImage.classList.remove('pixel__image_animation_2');
+    pixelImage.classList.add('pixel__image_animation_1');
+  } else {
+    pixelImage.classList.remove('pixel__image_animation_1');
+    pixelImage.classList.add('pixel__image_animation_2');
+  }
+}
 
 
-// pixelImage.addEventListener('click', animation);
+pixelImage.addEventListener('click', animation);
 
 
 const addPixel = (num) => {
@@ -132,7 +132,7 @@ const mediaQuery_4 = () => {
   if (media_4.matches) {
     removePixel();
     mainContainer.append(containerPixel);
-    addPixel(2520);
+    addPixel(810);
   } 
   paint();
   useEraser();
@@ -145,7 +145,7 @@ const mediaQuery_5 = () => {
   if (media_5.matches) {
     removePixel();
     mainContainer.append(containerPixel);
-    addPixel(1960);
+    addPixel(665);
   } 
   paint();
   useEraser();
@@ -158,7 +158,7 @@ const mediaQuery_6 = () => {
   if (media_6.matches) {
     removePixel();
     mainContainer.append(containerPixel);
-    addPixel(1440);
+    addPixel(1152);
   } 
   paint();
   useEraser();
@@ -171,7 +171,7 @@ const mediaQuery_7 = () => {
   if (media_7.matches) {
     removePixel();
     mainContainer.append(containerPixel);
-    addPixel(975);
+    addPixel(800);
   } 
   paint();
   useEraser();
@@ -184,7 +184,7 @@ const mediaQuery_8 = () => {
   if (media_8.matches) {
     removePixel();
     mainContainer.append(containerPixel);
-    addPixel(855);
+    addPixel(589);
   } 
   paint();
   useEraser();

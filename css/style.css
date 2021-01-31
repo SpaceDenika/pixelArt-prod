@@ -330,43 +330,53 @@
     padding: 10px 0;
   }
 
-  .control__label {
-    max-height: 20px;
+  .header {
+    margin-bottom: 65px;
   }
 
-  .control__label:first-of-type {
-    margin-bottom: 30px;
+  .control__label_type_eraser {
+    font-size: 0;
+    background-image: url("https://img.icons8.com/office/16/000000/eraser.png");
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .control__label_type_color {
+    background-image: url("https://img.icons8.com/office/100/000000/paint-palette.png");
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .control__fake-input_type_eraser {
     width: 15px;
     height: 15px;
-    top: 3px;
+    left: 25px;
   }
 
-  .control__button {
-    max-height: 20px;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+  .control__fake-input_type_color {
+    font-size: 0;
   }
 
-  .control__button:first-of-type {
-    margin-bottom: 30px;
+  .control__button_type_clear {
+    font-size: 0;
+    background-image: url("https://img.icons8.com/emoji/48/000000/cross-mark-emoji.png");
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
-  .control {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    max-height: 70px;
-    font-size: 20px;
+  .control__button_type_fill {
+    font-size: 0;
+    background-image: url("https://img.icons8.com/office/16/000000/paint-bucket.png");
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .pixel__container {
@@ -374,7 +384,7 @@
   }
 
   .pixel__image {
-    top: -6.5%;
+    top: -19.5%;
     left: 35%;
     width: 40px;
     height: 40px;
@@ -411,30 +421,10 @@
 }
 
 @media screen and (max-width: 424px) {
-  .control__label {
-    max-height: 16px;
-  }
-
-  .control__label:first-of-type {
-    margin-bottom: 35px;
-  }
-
   .control__fake-input_type_eraser {
     width: 10px;
     height: 10px;
-    top: 2px;
-  }
-
-  .control__button {
-    max-height: 16px;
-  }
-
-  .control__button:first-of-type {
-    margin-bottom: 35px;
-  }
-
-  .control {
-    font-size: 16px;
+    top: 5px;
   }
 
   .pixel__container {
@@ -442,7 +432,7 @@
   }
 
   .pixel__image {
-    top: -8%;
+    top: -10%;
   }
 }
 
@@ -452,7 +442,7 @@
   }
 
   .pixel__image {
-    top: -9%;
+    top: -11%;
   }
 }
 
@@ -462,6 +452,6 @@
   }
 
   .pixel__image {
-    top: -8%;
+    top: -12%;
   }
 }
